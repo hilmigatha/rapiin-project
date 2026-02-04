@@ -10,13 +10,14 @@
     <nav>
         <ul>
            
-            <li> <img src="img/logo-rapiin 1.png" alt=""></li>
+            <li> <img src="img/logo-rapiin 1.svg" alt=""></li>
             <div class="menu">
-            <li> <p><a href="">Beranda</a></p></li>
-            <li> <p><a href="">Fitur</a></p></li>
-            <li> <p><a href="">Harga</a></p></li>
-            <li> <p><a href="">Testimoni</a></p></li>
-            <li> <p><a href="">Solusi</a></p></li>
+           <li><p><a href="#" class="menu-aktif">Beranda</a></p></li>
+            <li><p><a href="#">Fitur</a></p></li>
+            <li><p><a href="#">Harga</a></p></li>
+            <li><p><a href="#">Testimoni</a></p></li>
+            <li><p><a href="#">Solusi</a></p></li>
+           
             </div>
             <div class="coba-btn">
             <li> <a href="">coba sekarang</a></li>
@@ -24,4 +25,20 @@
         </ul>
     </nav>
 </body>
+
+<script>
+    // Ambil semua elemen link di dalam nav
+    const menuLinks = document.querySelectorAll('nav a');
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // 1. Hapus class 'menu-aktif' dari SEMUA link dulu
+            menuLinks.forEach(item => item.classList.remove('menu-aktif'));
+
+            // 2. Tambahkan class 'menu-aktif' ke link yang BARUSAN di-klik
+            this.classList.add('menu-aktif');
+        });
+    });
+</script>
 </html>
+
