@@ -110,4 +110,113 @@ nav img {
     
 }
 
+/* Hero Section */
+.hero-section {
+    background-color: #006D69;
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 109, 105, 0.85), rgba(0, 109, 105, 0.85)),
+        url('img/background_hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    padding: 60px 20px 80px;
+    position: relative;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 40px 0;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #FFE037;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #D4B504;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 24px;
+    border: 2px solid white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-secondary:hover {
+    background-color: #006D69;
+    border-color: white;
+}
+
+
+
+/* WhatsApp Admin Button */
+.wa-admin-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.wa-admin-btn:hover {
+    background-color: #20BA5A;
+}
+
+.wa-admin-btn svg {
+    width: 20px;
+    height: 20px;
+}
 
