@@ -1252,3 +1252,289 @@ nav img {
     height: 60px;
     width: auto;
 }
+/* ============================================
+   CTA SECTION
+   ============================================ */
+.cta-section {
+    background-color: #006D69;
+    padding: 180px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ============ DECORATIVE CIRCLES ============ */
+.cta-circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+/* === KIRI === */
+/* Gelap - pojok kiri atas, sebagian kepotong */
+.cta-circle-1-inner {
+    width: 340px;
+    height: 300px;
+    top: -40px;
+    left: -100px;
+    background-color: #005955;
+}
+
+/* Terang - overlap di bawah kanan yang gelap */
+.cta-circle-1 {
+    width: 280px;
+    height: 280px;
+    top: -50px;
+    left: -40px;
+    background-color: #008580;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* === KANAN BAWAH === */
+/* Gelap - di belakang, overlap di atas-kiri */
+.cta-circle-2-inner {
+    width: 240px;
+    height: 240px;
+    bottom: -60px;
+    right: -50px;
+    top: 320px;
+    background-color: #005955;
+}
+
+/* Terang - lebih besar, dominan di pojok kanan bawah */
+.cta-circle-2 {
+    width: 320px;
+    height: 320px;
+    bottom: -140px;
+    right: -100px;
+    background-color: #008580;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* === KANAN - 3 Lingkaran solid === */
+/* Besar - pojok kanan atas */
+.cta-circle-3 {
+    width: 120px;
+    height: 120px;
+    top: 15px;
+    right: 70px;
+    background-color: #20a8a0;
+}
+
+/* Sedang - di bawah yang besar, agak ke kanan */
+.cta-circle-4 {
+    width: 50px;
+    height: 50px;
+    top: 160px;
+    right: 25px;
+    background-color: #20a8a0;
+}
+
+/* Kecil - di antara, agak ke tengah */
+.cta-circle-5 {
+    width: 32px;
+    height: 32px;
+    top: 250px;
+    right: 130px;
+    background-color: #20a8a0;
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 20px 0;
+}
+
+.cta-subtitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 40px 0;
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-cta-primary {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #FFE037;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-cta-primary:hover {
+    background-color: #E5C71E;
+}
+
+.btn-cta-secondary {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 24px;
+    border: 2px solid white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-cta-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+    background-color: #005854;
+    color: white;
+    padding: 60px 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+/* Footer Brand */
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-bottom: 16px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-desc {
+    font-size: 13px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 20px 0;
+}
+
+.footer-powered {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 20px 0;
+}
+
+.footer-powered strong {
+    color: white;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Footer Columns */
+.footer-col h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: white;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+}
+
+/* Contact List */
+.contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 14px;
+}
+
+.contact-icon {
+    font-size: 14px;
+    min-width: 20px;
+}
+
+.contact-list li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.contact-list li a:hover {
+    color: white;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
