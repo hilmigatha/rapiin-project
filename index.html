@@ -11,31 +11,33 @@
 <body>
     <!-- === NAVIGATION === -->
     <nav>
-        <ul>
-
-            <li> <img src="img/logo-rapiin 1.svg" alt=""></li>
-            <div class="menu">
-                <li>
-                    <p><a href="#" class="menu-aktif">Beranda</a></p>
-                </li>
-                <li>
-                    <p><a href="#">Fitur</a></p>
-                </li>
-                <li>
-                    <p><a href="#">Harga</a></p>
-                </li>
-                <li>
-                    <p><a href="#">Testimoni</a></p>
-                </li>
-                <li>
-                    <p><a href="#">Solusi</a></p>
-                </li>
-
+        <div class="nav-content">
+            <div class="logo">
+                <img src="img/logo-rapiin 1.svg" alt="Rapiin Logo">
             </div>
-            <div class="coba-btn">
-                <li> <a href="">coba sekarang</a></li>
+
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </ul>
+
+
+            <!-- Desktop & Mobile Menu -->
+            <div class="nav-links">
+                <ul class="menu-list">
+                    <li><a href="#" class="menu-aktif">Beranda</a></li>
+                    <li><a href="#">Fitur</a></li>
+                    <li><a href="#">Harga</a></li>
+                    <li><a href="#">Testimoni</a></li>
+                    <li><a href="#">Solusi</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="#">Coba Sekarang</a>
+                </div>
+            </div>
+        </div>
     </nav>
     <!-- nav E -->
 
@@ -60,7 +62,7 @@
 
 
             <!-- Whatsapp Admin Button -->
-            <a href="#" class="wa-admin-btn">
+            <a href="https://api.whatsapp.com/send/?phone=6287812066967&text=Halo+Admin%2C+saya+tertarik+dengan+produk+digital+Anda.+Bisakah+saya+mendapatkan+informasi+lebih+lanjut%3F&type=phone_number&app_absent=0" class="wa-admin-btn">
                 <img class="logo-wa" src="img/Whatsapp.svg" alt="">
                 Mendukung Admin
             </a>
@@ -800,6 +802,8 @@
             promoModal.classList.remove('active');
         };
 
+
+
         // Trigger: Show automatically after 3 seconds
         setTimeout(() => {
             showModal();
@@ -832,6 +836,16 @@
 </script>
 
 <script>
+    // Mobile Menu Toggle
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    }
     // Carousel Logic
     const track = document.querySelector('.testimonial-track');
     const slides = Array.from(track.children);
