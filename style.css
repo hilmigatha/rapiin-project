@@ -47,12 +47,18 @@ nav {
     gap: 40px;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 .menu-list {
     display: flex;
     gap: 50px;
     list-style: none;
     padding: 0;
-    margin-right: 200px;
+    margin: 0;
 }
 
 .menu-list li a {
@@ -96,6 +102,13 @@ nav {
     z-index: 1001;
 }
 
+/* Hide CTA text on desktop (it's part of nav-links on desktop) */
+@media (min-width: 901px) {
+    .nav-right .hamburger-menu {
+        display: none;
+    }
+}
+
 .hamburger-menu span {
     display: block;
     width: 25px;
@@ -109,6 +122,18 @@ nav {
 @media (max-width: 900px) {
     .hamburger-menu {
         display: flex;
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .nav-right .nav-cta a {
+        padding: 8px 16px;
+        font-size: 13px;
+        border-radius: 20px;
     }
 
     .nav-links {
@@ -135,7 +160,7 @@ nav {
         gap: 30px;
         text-align: center;
         margin-bottom: 30px;
-        margin-left: 230px;
+        margin-left: 0;
     }
 
     .menu-list li a {
@@ -739,11 +764,22 @@ nav {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 24px;
+    place-items: center;
+}
+
+.cards-grid .card {
+    max-width: 340px;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
     .cards-grid {
         grid-template-columns: repeat(3, 1fr);
+        place-items: stretch;
+    }
+
+    .cards-grid .card {
+        max-width: none;
     }
 }
 
@@ -2048,6 +2084,7 @@ nav {
         padding: 40px 20px 60px;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
+        margin-top: 85px;
     }
 
     .hero-content {
@@ -2424,6 +2461,9 @@ nav {
     /* HERO */
     .hero-title {
         font-size: 28px;
+    }
+    .hero-section{
+    margin-top: 85px;
     }
 
     .hero-subtitle {
